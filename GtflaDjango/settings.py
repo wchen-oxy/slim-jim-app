@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'm0jsy41@gc67r&%fergf1ffio1df17i2yubbkm&&c9_4=(7=rq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
 'guarded-mesa-91541.herokuapp.com',
