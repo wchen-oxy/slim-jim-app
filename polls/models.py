@@ -11,7 +11,7 @@ class Recipe(models.Model):
     Calories = models.CharField(max_length=10, default='')
     PrepTime = models.CharField(max_length=10, default='')
     CookTime = models.CharField(max_length=10, default='')
-    DietaryRestr = models.TextField(default='')
+    DietaryRestriction = models.TextField(default='')
     Ingredients = models.TextField(default='')
     Instructions = models.TextField(default='')
     Translation = models.TextField(default='')
@@ -55,7 +55,7 @@ class Exercise(models.Model):
         (Group, 'Group'),
     )
 
-    NumPeople = models.CharField(
+    Number_of_People = models.CharField(
         max_length=4,
         choices=NUM_PPL_CHOICE,
         default=Indiv,
@@ -65,7 +65,7 @@ class Exercise(models.Model):
     Time = models.TextField(default='')
     Sets = models.TextField(default='')
     Reps = models.TextField(default='')
-    CardStrenFlex = models.TextField(default='')
+    Cardio_Strength_Flex = models.TextField(default='')
     Muscles = models.TextField(default='')
     Instructions = models.TextField(default='')
     def __str__(self):
